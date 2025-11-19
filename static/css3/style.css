@@ -1,0 +1,450 @@
+
+
+/* GENERAL SETTINGS */
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+
+
+
+
+/* BODY SETTINGS */
+
+body { background-color: #ffffff; }
+
+
+
+
+
+/* HEADER */
+
+.header { display: flex; flex-direction: column; align-items: center; padding: 20px 32px; background-color: #37547d; color: #fff; }
+
+
+
+.header .logo { color: #ffffff; font-weight: 700; font-size: 40px; }
+
+
+
+
+
+
+
+
+
+/* MAIN BODY */
+
+main { display: flex; flex-wrap: wrap; align-items: flex-start; flex-direction: row; justify-content: center; width: 100%; max-width: 1400px; gap: 30px; margin-top: 35px; margin-bottom: 0px; margin-inline: auto; }
+
+
+
+
+
+
+
+
+.cards-section { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; width: 100%; }
+
+
+
+.card { background-color: #37547d; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0 69 255); min-width: 250px; flex: 1 1 250px; display: flex; flex-direction: column; align-items: center; }
+
+
+
+
+
+
+.card-title { font-size: 18px; font-weight: 600; margin-bottom: 10px; color: #ffffff; }
+
+
+.card-value { font-size: 28px; font-weight: 700; }
+
+
+.total-income .card-value { color: #2ecc71; }
+
+
+.total-expense .card-value { color: #e74c3c; }
+
+
+.balance .card-value { color: #f1c40f; }
+
+
+
+
+
+
+
+
+
+/* Chart Section container */
+
+.chart-section { height: 280px; width: 48%; max-width: 800px; margin: 0px; padding: 20px; background-color: #37547d; border-radius: 10px; box-shadow: 0 4px 12px rgba(0 69 255); display: flex; flex-direction: column; align-items: center; }
+
+
+
+
+
+/* Chart title */
+
+.chart-title { font-size: 22px; font-weight: 600; color: #ffffff; margin-bottom: 25px; }
+
+
+
+
+/* Chart bars list */
+
+.chart-bars { list-style: none; display: flex; justify-content: space-around; width: 100%; padding: 0; margin: 0; height: 180px; }
+
+
+
+
+/* Only bar and tag */
+
+.chart-bars li { display: flex; flex-direction: column; align-items: center; flex: 1; margin: 0 10px; justify-content: flex-end;  height: 100%; }
+
+
+
+
+/* Bar element */
+
+.bar { display: block; width: 50px; height: 0px; /* Height can be dynamically increased using JS */  border-radius: 6px; transition: height 0.3s ease, background-color 0.3s ease; }
+
+
+
+
+
+.income-bar { background-color: #2ecc71; }
+
+
+.expense-bar { background-color: #e74c3c; }
+
+
+
+
+/* Bar tags */
+
+.bar-label { margin-top: 10px; font-size: 16px; font-weight: 500; color: #ffffff; }
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ Transactions Table ------------------ */
+
+.transactions-section { height: 600px; width: 48%; max-width: none; margin: 0; padding: 20px; background-color: #37547d; border-radius: 10px; box-shadow: 0 4px 12px rgba(0 69 255); }
+
+
+.transactions-section h2 { font-size: 22px; font-weight: 600; color: #ffffff; margin-bottom: 20px; text-align: center}
+
+
+
+
+
+.transactions-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 16px; color: #ffffff; text-align: center; }
+
+
+.transactions-table thead th { text-align: center; padding: 14px 12px; background-color: #37547d; color: #ffffff; font-weight: 600; font-size: 17px; }
+
+
+
+
+
+.transactions-table tbody tr { border-bottom: 1px solid #d9d9d9; transition: background 0.2s ease; }
+
+.transactions-table tbody td { padding: 12px 10px; font-size: 15px; }
+
+.transactions-table tbody tr:last-child { border-bottom: none; }
+
+
+
+
+
+
+
+
+.dashboard-footer { width: 100%; position: fixed; bottom: 0; left: 0; background-color: #37547d; color: #ffffff; text-align: center; padding: 16px 0; font-size: 14px; border-top: 2px solid #5983bf; z-index: 100; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ Mobile Responsive ------------------ */
+
+
+@media (max-width: 575px) {
+    
+	
+	.header { padding: 15px 20px !important; }
+
+
+    .header .logo { font-size: 28px !important; text-align: center !important; }
+	
+	
+	main { flex-direction: column !important; align-items: center !important; gap: 15px !important; margin-top: 20px !important; }
+	
+	
+	
+	
+	
+	
+	.cards-section { flex-direction: column !important; align-items: center !important; gap: 15px !important; }
+
+
+    .card { width: 90% !important; min-width: unset !important; padding: 15px !important; height: 90px !important; flex: none !important; }
+	
+	
+	
+	
+	
+	
+    .card-title { font-size: 16px !important; margin-bottom: 8px !important; }
+
+
+    .card-value { font-size: 22px !important; font-weight: 500 !important; }
+	
+	
+	
+	
+	
+	
+	.total-income .card-value { color: #2ecc71 !important; }
+    
+	
+	.total-expense .card-value { color: #e74c3c !important; }
+    
+	
+	.balance .card-value { color: #f1c40f !important; }
+	
+	
+	
+	
+	
+	
+	.chart-section { width: 90% !important; height: 200px !important; padding: 15px !important; }
+	
+	
+	.chart-title { font-size: 18px !important; font-weight: 500 !important; color: #ffffff !important; margin-bottom: 15px !important; }
+
+
+
+
+
+    .chart-bars { flex-direction: row !important; align-items: center !important; height: 150px !important; gap: 10px !important; }
+	
+		
+	.chart-bars li { display: flex !important; flex-direction: column !important; align-items: center !important; flex: 1 !important; margin: 0 5px !important; justify-content: flex-end !important; height: 100% !important; }
+	
+	
+	
+	
+	
+	
+	.bar { display: block !important; width: 35px !important; border-radius: 6px !important; transition: height 0.3s ease, background-color 0.3s ease !important; }
+	
+
+    .income-bar { background-color: #2ecc71 !important; } 
+	
+	.expense-bar { background-color: #e74c3c !important; }
+	
+	
+	
+	.bar-label { margin-top: 8px !important; font-size: 14px !important; font-weight: 500 !important; color: #ffffff !important; }
+
+
+	
+	
+	
+	
+	
+	.transactions-section { height: 660px !important; width: 90% !important; margin: 0 auto !important; padding: 15px !important; background-color: #37547d !important; border-radius: 10px !important; margin-bottom: 50px !important; }
+	
+	
+	.transactions-section h2 { font-size: 18px !important; font-weight: 600 !important; color: #ffffff !important; margin-bottom: 15px !important; text-align: center !important; }
+	
+	
+	.transactions-table { width: 100% !important; border-collapse: collapse !important; margin-top: 15px !important; font-size: 14px !important; color: #ffffff !important; text-align: center !important; }
+	
+	
+	
+	
+	
+	
+	.transactions-table thead th { text-align: center !important; padding: 10px 8px !important; background-color: #37547d !important; color: #ffffff !important; font-weight: 500 !important; font-size: 15px !important; }
+	
+	
+	.transactions-table tbody tr { border-bottom: 1px solid #d9d9d9 !important; transition: background 0.2s ease !important; }
+	
+	
+	.transactions-table tbody td { padding: 10px 8px !important; font-size: 13px !important; }
+	
+	
+	.transactions-table tbody tr:last-child { border-bottom: none !important; }
+
+	
+	
+	
+	
+	.dashboard-footer { width: 100% !important; padding: 12px 0 !important; font-size: 12px !important; position: relative !important; bottom: 0 !important; left: 0 !important; background-color: #37547d !important; color: #ffffff !important; text-align: center !important; border-top: 2px solid #5983bf !important; z-index: 100 !important; } }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ------------------ Tablet Responsive ------------------ */
+	
+	
+	
+@media (min-width: 576px) and (max-width: 1024px) {
+
+
+    .header { padding: 20px 28px !important; }
+
+    .header .logo { font-size: 34px !important; text-align: center !important; }
+
+
+
+
+
+    main { margin-top: 45px !important; display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; justify-content: center !important; align-items: flex-start !important; gap: 25px !important; max-width: 750px !important; }
+
+
+
+
+    .cards-section { display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; justify-content: center !important; align-items: stretch !important; gap: 25px !important; width: 100% !important; margin-right: 20px !important; margin-left: 20px !important; }
+
+    
+	.card { flex: 1 1 0 !important; min-width: 0 !important; padding: 20px !important; }
+
+
+
+
+
+    .card-title { font-size: 17px !important; margin-bottom: 9px !important;  font-weight: 500 !important; }
+
+
+    .card-value { font-size: 24px !important; font-weight: 500 !important; }
+	
+
+
+
+
+
+	
+	.total-income .card-value { color: #2ecc71 !important; }
+    
+	
+	.total-expense .card-value { color: #e74c3c !important; }
+    
+	
+	.balance .card-value { color: #f1c40f !important; }
+	
+	
+
+
+
+
+    .chart-section { width: 48% !important; height: 260px !important; padding: 18px !important; margin-right: -8px !important; margin-left: 5px !important; }
+
+
+    .chart-title { font-size: 20px !important; font-weight: 500 !important; color: #ffffff !important; margin-bottom: 17px !important; }
+
+
+
+
+
+
+    .chart-bars { flex-direction: row !important; align-items: flex-end !important; height: 180px !important; gap: 15px !important; }
+
+
+	.chart-bars li { display: flex !important; flex-direction: column !important; align-items: center !important; flex: 1 !important; margin: 0 10px !important; justify-content: flex-end !important; height: 100% !important; }	
+
+
+
+
+
+
+    .bar { display: block !important; width: 40px !important; border-radius: 6px !important; transition: height 0.3s ease, background-color 0.3s ease !important; }
+
+
+    .income-bar { background-color: #2ecc71 !important; } 
+	
+	.expense-bar { background-color: #e74c3c !important; }
+
+
+
+
+
+
+
+
+    .bar-label { margin-top: 9px !important; font-size: 15px !important; font-weight: 500 !important; color: #ffffff !important; }
+
+
+
+
+    .transactions-section { height: 755px !important; width: 48% !important; margin: 0 auto !important; padding: 20px !important; background-color: #37547d !important; border-radius: 10px !important; margin-bottom: 50px !important; }
+
+
+	.transactions-section h2 { font-size: 20px !important; font-weight: 600 !important; color: #ffffff !important; margin-bottom: 17px !important; text-align: center !important; }
+	
+
+	.transactions-table { width: 100% !important; border-collapse: collapse !important; margin-top: 17px !important; font-size: 16px !important; color: #ffffff !important; text-align: center !important; }
+	
+	
+
+
+
+
+
+
+	.transactions-table thead th { text-align: center !important; padding: 12px 10px !important; background-color: #37547d !important; color: #ffffff !important; font-weight: 500 !important; font-size: 16px !important; }
+	
+
+	.transactions-table tbody tr { border-bottom: 1px solid #d9d9d9 !important; transition: background 0.2s ease !important; }
+
+
+    .transactions-table tbody td { padding: 11px 9px !important; font-size: 14px !important; }
+
+
+	.transactions-table tbody tr:last-child { border-bottom: none !important; }
+
+
+
+
+
+	
+    .dashboard-footer { width: 100% !important; padding: 14px 0 !important; font-size: 13px !important; position: relative !important; bottom: 0px !important; left: 0px !important; background-color: #37547d !important; color: #ffffff !important; text-align: center !important; border-top: 2px solid #5983bf !important; z-index: 100 !important; } }
+	
+	
