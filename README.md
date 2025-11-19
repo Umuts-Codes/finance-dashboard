@@ -7,3 +7,14 @@ In the “Recent Transactions” section, any type of data entered is immediatel
 
 
 <br><br>
+
+
+
+## HOME PAGE
+
+The first image that appears on the page that opens is the income and expense and balance data of a large food market.
+
+![Finance Dashboard Screenshot](screenshots/1-Finance-Dashboard.png)
+
+
+<br><br>
