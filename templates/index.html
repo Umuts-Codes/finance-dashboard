@@ -1,0 +1,113 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Finance Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="{{ url_for('static', filename='js/jquery.dashboard.js') }}" defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="icon" href="{{ url_for('static', filename='images/line-chart.png') }}" type="image/png">
+</head>
+<body>
+
+
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Finance Dashboard</div>
+        </header>
+		
+		
+		
+
+
+
+
+
+
+
+    <!-- Cards Section -->
+   <main>
+     <section class="cards-section">
+        <div class="card total-income">
+            <div class="card-title">Total Income</div>
+            <div class="card-value" id="total-income">$0</div>
+        </div>
+        <div class="card total-expense">
+            <div class="card-title">Total Expense</div>
+            <div class="card-value" id="total-expense">$0</div>
+        </div>
+        <div class="card balance">
+            <div class="card-title">Balance</div>
+            <div class="card-value" id="balance">$0</div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Chart Section (CSS bar chart) -->
+    <section class="chart-section">
+        <div class="chart-title">Income-Expense Chart</div>
+        <ul class="chart-bars">
+            <li>
+                <span class="bar income-bar"></span>
+                <span class="bar-label">Income</span>
+            </li>
+            <li>
+                <span class="bar expense-bar"></span>
+                <span class="bar-label">Expense</span>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+
+    <!-- Transactions Table -->
+    <section class="transactions-section">
+        <h2>Recent Transactions</h2>
+        <table class="transactions-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for t in transactions %}
+                <tr>
+                    <td>{{ t.date }}</td>
+                    <td>{{ t.category }}</td>
+                    <td>{{ t.amount }}</td>
+                    <td>{{ t.description }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    </main>
+
+
+
+
+
+
+
+
+    <footer class="dashboard-footer">
+        <p>&copy; 2025 Finance Dashboard. All rights reserved.</p>
+    </footer>
+
+
+
+
+</body>
+</html>
