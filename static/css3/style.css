@@ -107,7 +107,7 @@ main { display: flex; flex-wrap: wrap; align-items: flex-start; flex-direction: 
 
 /* Bar element */
 
-.bar { display: block; width: 50px; height: 0px; /* Height can be dynamically increased using JS */  border-radius: 6px; transition: height 0.3s ease, background-color 0.3s ease; }
+.bar { display: block; width: 50px; height: 0px; /* Height can be dynamically increased using JS */  border-radius: 6px; }
 
 
 
@@ -257,7 +257,7 @@ main { display: flex; flex-wrap: wrap; align-items: flex-start; flex-direction: 
 	
 	
 	
-	.bar { display: block !important; width: 35px !important; border-radius: 6px !important; transition: height 0.3s ease, background-color 0.3s ease !important; }
+	.bar { display: block !important; width: 35px !important; border-radius: 6px !important; }
 	
 
     .income-bar { background-color: #2ecc71 !important; } 
@@ -395,7 +395,7 @@ main { display: flex; flex-wrap: wrap; align-items: flex-start; flex-direction: 
 
 
 
-    .bar { display: block !important; width: 40px !important; border-radius: 6px !important; transition: height 0.3s ease, background-color 0.3s ease !important; }
+    .bar { display: block !important; width: 40px !important; border-radius: 6px !important; }
 
 
     .income-bar { background-color: #2ecc71 !important; } 
