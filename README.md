@@ -18,3 +18,10 @@ The first image that appears on the page that opens is the income and expense an
 
 
 <br><br>
+
+
+
+
+![Finance Dashboard Screenshot](screenshots/2-Finance-Dashboard.png)
+
+While the market company is operating, if any negative values appear in the data, the updated income and expense values are instantly reflected in the bars, and the current financial table can be viewed as a panel in the Recent Transactions section using jQuery JavaScript and backend processing.
