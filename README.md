@@ -31,6 +31,8 @@ While the market company is operating, if any negative values appear in the data
 <br><br>
 
 
+## BALANCE
+
 ![Finance Dashboard Screenshot](screenshots/3-Finance-Dashboard.png)
 
 Jquery Javascript and Backend working in the background the corporate grocery store shows the remaining financial amount accurately as a balance no matter how the financial data of the company is entered.
