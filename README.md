@@ -21,6 +21,7 @@ The first image that appears on the page that opens is the income and expense an
 
 
 
+## Jquery Javascript and Backend Functionality
 
 ![Finance Dashboard Screenshot](screenshots/2-Finance-Dashboard.png)
 
