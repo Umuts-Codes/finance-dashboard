@@ -21,11 +21,13 @@ The first image that appears on the page that opens is the income and expense an
 
 
 
-## Jquery Javascript and Backend Functionality
+## JQUERY JAVASCRIPT AND BACKEND FUNCTIONALITY
+
+While the market company is operating, if any negative values appear in the data, the updated income and expense values are instantly reflected in the bars, and the current financial table can be viewed as a panel in the Recent Transactions section using jQuery JavaScript and backend processing.
 
 ![Finance Dashboard Screenshot](screenshots/2-Finance-Dashboard.png)
 
-While the market company is operating, if any negative values appear in the data, the updated income and expense values are instantly reflected in the bars, and the current financial table can be viewed as a panel in the Recent Transactions section using jQuery JavaScript and backend processing.
+
 
 
 <br><br>
@@ -33,6 +35,8 @@ While the market company is operating, if any negative values appear in the data
 
 ## BALANCE
 
+Jquery Javascript and Backend working in the background the corporate grocery store shows the remaining financial amount accurately as a balance no matter how the financial data of the company is entered.
+
 ![Finance Dashboard Screenshot](screenshots/3-Finance-Dashboard.png)
 
-Jquery Javascript and Backend working in the background the corporate grocery store shows the remaining financial amount accurately as a balance no matter how the financial data of the company is entered.
+
